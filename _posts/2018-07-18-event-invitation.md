@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Day 2: Portfolio site"
+title:  "Day 2: Event invitation"
 date:   2018-07-18 22:57:34 +0200
 categories: jekyll update
 ---
