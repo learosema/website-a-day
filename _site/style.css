@@ -1,5 +1,0 @@
-@import url(./vars.css);
-body {
-  display: grid;
-  color: #0f0;
-  background: var(--color-2); }
