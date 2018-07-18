@@ -1,11 +1,8 @@
 ---
 ---
-
-
-@import "vars";
+$green: #0f0;
 
 body {
+  background: $green;
   display: grid;
-  color: $blue;
-  background: var(--color-2);
 }
