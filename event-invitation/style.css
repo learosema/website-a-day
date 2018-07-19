@@ -91,5 +91,6 @@ a {
 
 .main__section {
   max-width: 1200px;
-  margin: 2em auto;
+  margin: 0 auto;
+  padding-top: 2em;
 }
