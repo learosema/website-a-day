@@ -1,10 +1,19 @@
+/**
+ * Base Styles
+ *
+ *********************************************/
+
 body {
   background: #000;
   color: #fff;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-size: 1.33em;
   line-height: 1.2;
-  margin: 0;
+  margin: 1.5em 0;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 *, *::before, *::after {
@@ -16,24 +25,67 @@ h1, h2, h3, h4, h5 {
   font-size: 2em;
 }
 
-.top-nav {
-  display: fixed;
-  height: 2em;
+a {
+  color: #07f;
 }
+/**
+ * Navigation
+ *
+ **********************************************************/
+
+
+.top-nav {
+  position: fixed;
+  top: 0;
+  display: flex;
+  width: 100%;
+  height: 1.5em;
+  background:#000;
+  padding: 0 2em;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.top-nav__checkbox {
+  display: none; 
+}
+
+.top-nav__checkbox:checked + .main-nav__menu {
+  opacity: 1.0;
+  margin: 0;
+}
+
+.main-nav__menu {
+  transition: all 500ms ease;
+  opacity: 0;
+  margin: 9999px -9999px;
+  position: fixed;
+  right: 0;
+  width: auto;
+  top: 1.5em;
+  background: #000;
+  color: #fff;
+  padding: 2em;
+  list-style: none;
+
+}
+
+
+/**
+ * Header
+ *
+ ************************************************************/
 
 .header {
   background: #f0f;
   background: linear-gradient(30deg, #f00, #ff0, #0f0, #0ff, #00f, #f0f);
   color: #000;
-  padding: 2em;
-  min-height: 100vh;
+  padding: 4em 2em;
+  min-height: 34vh;
 }
 
-.top-nav {
-  display: none;
-}
-
-.top-nav__menu {
-  display: none;
+.header__wrapper, .main__section {
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
