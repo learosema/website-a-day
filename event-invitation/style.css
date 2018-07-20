@@ -136,7 +136,7 @@ a {
 
 .main__section {
   max-width: 1200px;
-  background: #fff;
+  background: rgba(255,255,255,.9);
   
   margin: 0 auto;
 
