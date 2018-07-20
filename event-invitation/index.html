@@ -5,87 +5,124 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.3/dist/leaflet.css"
+   integrity="sha512-Rksm5RenBEKSKFjgI3a41vrjkw4EVPlJ3+OiI65vTjIdo9brlAacEuKOiQ5OFh7cOI1bkDwLqdLw3Zg0cRJAAQ=="
+   crossorigin=""/>
   <title>Document</title>
 </head>
 <body>
-  <nav class="top-nav">
-
-    <a class="top-nav__logo" href="#">CSD Aurich</a>
-
-    <label role="button" class="top-nav__burger" for="menu" aria-label="Navigation">      
-      <svg viewBox="0 0 128 128" style="width:16px; height: 16px">
-        <path d="M14,28 l100,0 M14,56 l100,0 M14,86 l100,0" stroke="#fff" stroke-width="16" stroke-linecap="round" />
+  <nav class="nav">
+    <input type="checkbox" class="nav__checkbox" id="menu" />
+    <label role="button" class="nav__burger" for="menu" aria-label="Navigation">      
+      
+      <svg class="nav__icon" viewBox="0 0 128 128">
+        <path class="icon__burger-top" d="M14,28 l100,0" stroke="#fff" stroke-width="16" stroke-linecap="round" />
+        <path class="icon__burger-middle" d="M14,56 l100,0 " stroke="#fff" stroke-width="16" stroke-linecap="round" />
+        <path class="icon__burger-bottom" d="M14,86 l100,0" stroke="#fff" stroke-width="16" stroke-linecap="round" />
       </svg>
-    </label>
-    
-  </nav>
 
-  <nav class="main-nav">
-      <input type="checkbox" class="top-nav__checkbox" id="menu" />
-      <ul class="main-nav__menu" name="menu">
-          <li class="top-nav__menu-item"><a href="#home" class="top-nav__link">Home</a></li>
-          <li class="top-nav__menu-item"><a href="#about" class="top-nav__link">About the CSD</a></li>
-          <li class="top-nav__menu-item"><a href="#location" class="top-nav__link">Location</a></li>
-          <li class="top-nav__menu-item"><a href="#register" class="top-nav__link">Register</a></li>
-          <li class="top-nav__menu-item"><a href="#donate" class="top-nav__link">Donate</a></li>
-          <li class="top-nav__menu-item"><a href="#sponsors" class="top-nav__link">Sponsors</a></li>
-          <li class="top-nav__menu-item"><a href="#imprint" class="top-nav__link">Imprint</a></li>
+      <ul class="nav__menu" name="menu">
+          <li class="nav__menu-item"><a href="#home" class="nav__link">Home</a></li>
+          <li class="nav__menu-item"><a href="#about" class="nav__link">About the CSD</a></li>
+          <li class="nav__menu-item"><a href="#history" class="nav__link">History</a></li>
+          <li class="nav__menu-item"><a href="#location" class="nav__link">Location</a></li>
+          <li class="nav__menu-item"><a href="#register" class="nav__link">Register</a></li>
+          <li class="nav__menu-item"><a href="#donate" class="nav__link">Donate</a></li>
+          <li class="nav__menu-item"><a href="#sponsors" class="nav__link">Sponsors</a></li>
       </ul>
+    </label>
   </nav>
   
-  <header class="header">
-    <div class="header__wrapper" name="home">
+
+
+  <header class="header" id="home">
+    <div class="header__wrapper" >
         <div class="header__logo"></div>
         <h1 class="header__title">Christopher Street Day Aurich</h1>
-        <h2>Save the date: August 16th, 2018</h2>
+        <h2 class="header__date">Save the date: August 18th, 2018</h2>
     </div>
   </header>
   <main class="main">
     <section class="main__section" id="about">
       <h3>About the CSD</h3>
-      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde, voluptas minus error nisi non atque suscipit, cumque qui ad beatae pariatur, aperiam accusantium expedita blanditiis esse eaque! Corrupti, eveniet commodi?</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam quod sit odio qui dignissimos iusto quas et officiis vero repudiandae tempora esse, cum labore hic aperiam accusamus ea corporis numquam.</p>
-      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. At in quidem illum beatae pariatur odio ut, modi ratione voluptatem laudantium optio aliquid sed ullam voluptates, nobis repellendus doloremque, accusamus deleniti.</p>
-      <p>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum consequatur, eius nihil ut, tenetur repellat ullam eos sequi unde voluptatum nobis necessitatibus impedit explicabo aspernatur tempora distinctio. Illum, temporibus repellendus!
-        Magnam culpa quia ullam adipisci qui porro, at omnis voluptas illum, temporibus earum neque similique eaque facilis, numquam quos cum mollitia tempore! Consequuntur nisi minus, et a qui fugit eius?
-        Odit illum placeat suscipit nisi esse cupiditate doloremque veritatis, rem aspernatur! Omnis voluptates perspiciatis, tempore a, iusto maiores ut aliquam rem odit dolor odio reiciendis fuga? Error, placeat veniam. Fugit.
+      <p>The <abbr title="Christopher Street Days">CSD's</abbr> in germany do not take place on
+        the historical date, June 28th, but on the weekends from June to August. The event has to 
+        be registered as a demonstration and it is planned, organized and carried out by individuals
+        and social clubs contributing voluntarily.
       </p>
-      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum, placeat. Non nisi delectus earum? Magni cupiditate tempora suscipit ad, pariatur ratione ab dignissimos eius sapiente eaque quisquam odio reprehenderit consectetur.
-      Minus commodi ab amet aperiam autem consequuntur voluptatibus dolorem reprehenderit vero odit vitae, nostrum voluptate impedit quia non facere assumenda similique deserunt soluta, error quam nobis! Maiores vel cum illo?
-      Quam est ratione veritatis aliquam! Magni iste nemo reprehenderit, odit suscipit expedita pariatur dolore! Qui tenetur quasi sed animi minima consequuntur distinctio officia recusandae, sit error sint, pariatur saepe voluptates?
-      Accusantium quam aliquam culpa perferendis. Tempore nesciunt voluptatem repellendus nisi quis, quia debitis fugit aliquid officiis temporibus exercitationem ducimus deserunt molestias suscipit tenetur libero impedit dolorum perferendis odit, sapiente voluptatum!
-      Eaque, nesciunt omnis voluptate velit dolores doloremque quibusdam consequuntur tempora ipsum asperiores eos ad nulla unde laborum sint commodi in quam. Suscipit ullam itaque molestiae atque minus sunt iure voluptates?
-      Dolor, maxime asperiores ab perferendis quos obcaecati doloremque praesentium impedit quasi expedita aliquid optio in vero, tenetur, sit ipsum fugiat nam! Ipsa veniam ducimus minima illo aut cum unde! Consequuntur.
-      Aut eaque illo ex molestias beatae odit nisi, pariatur non itaque est cumque possimus eum accusamus dolor sequi iusto quia dolores quaerat consectetur rerum, architecto nam tempore recusandae! Repellendus, perspiciatis.
-      Consectetur pariatur beatae sed voluptate tempora ad, aspernatur corporis omnis commodi consequatur perspiciatis dolores, hic architecto assumenda nisi porro et in quos aliquid blanditiis temporibus error sapiente? Magni, corporis repudiandae.
-      Dolores eos laboriosam perspiciatis voluptate, quod, quis delectus aliquam error, quas aspernatur in nobis officia beatae deleniti? Assumenda, earum iure alias impedit praesentium vitae non. Blanditiis modi sunt provident in!
-      Veritatis id nisi, laboriosam nesciunt facilis ad quam illum. Explicabo in neque veniam porro molestias? Ducimus quas, accusamus, sequi sed neque quod, qui culpa ullam dolores voluptates ad fugit animi.
-      Numquam ipsa inventore nostrum, libero aperiam architecto soluta unde adipisci, eligendi cum officia, laudantium accusamus? Magni dolorum delectus dicta molestiae perferendis iusto aut atque, blanditiis voluptatem ad beatae praesentium ullam.
-      Quaerat delectus doloribus eveniet odio id? Possimus, reiciendis quo? Perspiciatis vitae blanditiis reiciendis dolorem, pariatur amet eum? Fugiat, earum commodi! Voluptates, earum? Dolor earum aperiam vel provident autem ullam. Sunt.</p>
+      <p> 
+        The CSDs are also regarded as a political demonstration with a policy-related motto,
+        usually shown up in the form of demonstration parades and a subsequent rally. 
+        Often the rally is supported by artists performing on stage.
+      </p>
+      <p>
+        In addition to the political message of the CSD is celebrated. This celebration of one's own 
+        lifestyle is based on the origins of the CSD: The participants often demonstratively demonstrate 
+        that they are proud of themselves, their lives and their sexual identity.
+      </p>
     </section>
-    <section class="main__section" id="location">
+    <section class="main__section" id="history">
+      <h3>History</h3>
+      <img src="http://csd-aurich.de/____impro/1/csd1.jpg?etag=%221d5e9-534aca87%22&amp;sourceContentType=image%2Fjpeg&amp;ignoreAspectRatio&amp;resize=448%2B189&amp;extract=0%2B1%2B448%2B138&amp;quality=85" alt="First CSD in NYC" />
+      <p>
+        The CSD recalls the first known uprising of homosexuals and other sexual minorities against 
+        police arbitrariness on New York's Christopher Street in the Greenwich Village neighborhood: 
+        in the early hours of June 28, 1969, the so-called Stonewall Uprising took place in the Stonewall Inn bar.
+      </p><p>   
+        At that time there were repeated violent raids of the police in pubs with homosexual target audience. 
+        It came in the episode to days of street battles between homosexuals and the police. 
+        To commemorate the first anniversary of the uprising, the Christopher Street Liberation Day Committee was established. 
+      </p><p>
+        Since then, in New York on the last Saturday of June, the Christopher Street Liberation Day, a street parade 
+        commemorates this event. It has become an international tradition to hold a demonstration for the rights 
+        of gays and lesbians in the summer. In Berlin, Cologne and other major German cities, these demonstrations 
+        are held each year as Christopher Street Day or "CSD" for short.
+      </p>
+      <p>
+        In Germany, the first CSDs took place under this name in 1979, located in Berlin and Bremen.
+        Larger lesbian and gay demonstrations have been around since 1972 (the first in the Federal 
+        Republic of Germany on April 29, 1972 in Münster).
+      </p>
+
+    </section>
+    <section class="location main__section" id="location">
       <h3>Location</h3>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur repellendus minima ea, velit, impedit hic sint sit eveniet eum, nobis eligendi explicabo labore esse nam assumenda enim cum dolor sunt.
-      Voluptas facere id quasi quas eum vel sunt accusantium delectus itaque alias dicta nesciunt saepe minima labore nobis, error officiis? Sit iure laborum minima doloremque maxime minus aliquam eius vel.
-      Voluptatem unde pariatur iusto repellendus, minima id itaque magnam hic ipsa dolor numquam in quibusdam veritatis magni reprehenderit quis! Natus expedita vitae illum minus veritatis impedit totam aliquid modi facilis.
-      Sed delectus nobis sunt labore non itaque perferendis provident nulla quidem voluptatibus reprehenderit, cum quod sit porro voluptas aliquid consequatur aliquam? Minima perferendis ex delectus accusantium autem modi dicta nulla.
-      Quidem sint sed autem nisi vitae quo iure cumque nostrum voluptatibus iusto delectus quas cum ut reprehenderit voluptates, ipsam quisquam nesciunt! Ex tempora dignissimos sunt quae at amet labore odit.
-      Nam quibusdam recusandae ipsum repellat in, id sint accusamus deleniti voluptate! Repellendus repudiandae, quia architecto pariatur magnam atque exercitationem quo cumque quidem voluptas tempora eum quasi labore dolore laboriosam maxime!
-      Exercitationem aliquam repellendus ullam non neque ex pariatur a natus eveniet quisquam odio iure, ea iste magni cumque dolore eum sit perspiciatis quis molestias culpa sequi! Numquam reiciendis expedita obcaecati!
-      Culpa delectus tempora, id sunt est quae, beatae deserunt veniam dolor ea sapiente, animi libero consequatur repellat magni ut maiores minima voluptates architecto sed odio. Praesentium quibusdam omnis eaque nostrum?
-      Architecto possimus cupiditate at adipisci natus recusandae et quam, provident eaque dolores itaque sint suscipit! Sint soluta illum eum distinctio fuga, neque repudiandae pariatur earum repellat. Eligendi veniam odit aperiam!
-      Enim veniam similique natus quo. Nulla error vero ut ipsa officia magni aut animi quasi! Ipsa, quae error, vel perspiciatis ea sed rem suscipit a excepturi possimus vero, temporibus laudantium?
-      Enim a rem animi expedita autem, vero assumenda aliquid in sit dolores vel aliquam ea incidunt saepe voluptatum ut voluptates praesentium exercitationem. Odit non voluptatem, sed officia pariatur voluptas! Recusandae.
-      Consequuntur culpa modi, repellendus a voluptatem architecto, dignissimos nesciunt nostrum saepe itaque minima incidunt quidem repudiandae molestiae reiciendis officiis eligendi vitae eveniet ea excepturi! Ex sit aspernatur delectus facilis recusandae!</p>
+      <iframe class="location__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d75972.73711644014!2d7.470393940210849!3d53.48368472693042!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47b64245153720f1%3A0x1d123214184bb038!2sAurich!5e0!3m2!1sde!2sde!4v1532102836321" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
     </section>
-    <section id="register"></section>
-    <section id="donate"></section>
-    <section id="sponsors"></section>
-    <section id="imprint"></section>
+    <section class="main__section" id="contact">
+      <h3>Contact</h3>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias deleniti a tenetur incidunt doloremque eligendi neque cum aspernatur quas laudantium provident sit vitae quaerat, error aperiam impedit ab minima facilis.
+        Consequuntur, voluptatum ullam aspernatur non delectus vel, voluptatibus sit a quae dolores sunt repudiandae, doloribus veniam dolorem ad. Ipsum commodi veniam, perferendis dolorem similique incidunt dolorum consequuntur quia nisi distinctio.
+        Veritatis maiores minima voluptate harum nisi sunt ipsum, reprehenderit ab reiciendis, obcaecati autem, cumque iusto dolorum dolorem. Expedita a dolores praesentium dignissimos ipsam reiciendis assumenda, quaerat eligendi, error, eaque corporis.
+        Illum quaerat repellat dicta doloribus rem, deserunt perferendis quia vitae architecto ipsa consequuntur sed, nisi et aut aperiam eligendi, dolorem explicabo. Maiores provident hic est iste repellendus accusantium reiciendis natus?
+        Eum nobis adipisci, animi amet eveniet dolorum odio eius aperiam quam corrupti et porro qui error asperiores reprehenderit libero, sed voluptatem consequuntur vel eligendi illum quae vero. Ipsam, ratione facilis.
+        Cumque unde voluptatum quam magnam quidem quasi odit debitis laudantium autem? Harum natus ullam voluptatem esse ea tempore, unde ducimus eius veritatis consequatur ex numquam, laboriosam doloribus iste voluptatum quidem.
+        Placeat consequatur ipsam ex. Architecto perspiciatis placeat exercitationem officia nam voluptates. Tempore nemo eaque, qui, accusamus enim, hic fuga iure quis perspiciatis sit harum soluta totam dolorem molestiae odio error.
+        Reprehenderit excepturi nesciunt nulla molestias! Obcaecati similique fugit laborum ad, temporibus, aliquid voluptatem eligendi nihil quaerat sunt, reprehenderit iusto deserunt laboriosam ipsum excepturi praesentium quas. Magnam aspernatur a dolorum exercitationem.
+        Ipsam modi, maiores incidunt, ex commodi sunt magnam consequuntur, earum assumenda ipsa similique accusantium officia saepe veritatis dolor in? Fuga, consectetur sunt magnam reprehenderit recusandae veniam error deleniti in consequatur!
+        Labore possimus suscipit maxime quibusdam officiis veritatis ducimus ipsam laudantium, accusantium accusamus mollitia quo vero est dolorum voluptatibus eos quaerat inventore explicabo! Reiciendis, consequuntur porro voluptatibus nobis iste id expedita!
+        Ducimus sed tenetur ullam ipsum architecto temporibus sunt. Maxime sequi atque iure voluptas asperiores? Possimus non debitis impedit quod obcaecati illum voluptatibus, eius, cumque odio eos in quisquam inventore quam!
+        Repellendus earum a cum tempora quos laboriosam modi dolores fuga eum tempore molestiae dolorem aliquid magnam fugit qui porro, accusamus laudantium delectus, autem nesciunt eveniet repudiandae. Cupiditate voluptate atque perferendis?
+      </p>
+    </section>
+
+
+
+    <section class="donate main__section" id="donate"></section>
+
+    <section class="sponsors main__section" id="sponsors">
+      <h3>Sponsors</h3>
+      <p>We would like to thank our sponsors.</p>
+      <figure>
+        <img src="https://placekitten.com/300/200" alt="Sponsor">
+        <figcaption>The cat club.</figcaption>
+      </figure>
+    </section>
   </main>
   <footer>
 
   </footer>
+  <script src="index.js"></script>
 </body>
 </html>
