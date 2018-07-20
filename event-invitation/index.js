@@ -8,13 +8,12 @@ NodeList.prototype.toArray = function () {
 NodeList.prototype.addEventListener = function (eventType, listener, options) {
   this.toArray().forEach(element => {
     element.addEventListener(eventType, listener, options)
-  });
+  })
 }
 
 const menu = $`#menu`
 
 $$`.nav__link`.addEventListener('click', (e) => {
-  console.log('MUH!!!')
   menu.checked = false;
   return true;
 })
