@@ -116,7 +116,8 @@ a {
  ************************************************************/
 
 .header {
-  background: rgba(0,0,0,.8);
+  background: #000;
+  max-width: 1200px;
   color: #fff;
   margin: 0 auto;
   padding: 1em;
