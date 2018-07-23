@@ -4,9 +4,25 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="favicon" href="logo.svg">
   <title>Document</title>
 </head>
 <body>
+  <svg class="svg-defs">
+    <!-- thanks to https://stackoverflow.com/a/6094674/388201 -->
+    <filter id="dropshadow" height="130%">
+        <feGaussianBlur in="SourceAlpha" stdDeviation="4"/> <!-- stdDeviation is how much to blur -->
+        <feOffset dx="8" dy="8" result="offsetblur"/> <!-- how much to offset -->
+        <feComponentTransfer>
+          <feFuncA type="linear" slope="0.8"/> <!-- slope is the opacity of the shadow -->
+        </feComponentTransfer>
+        <feMerge> 
+          <feMergeNode/> <!-- this contains the offset blurred image -->
+          <feMergeNode in="SourceGraphic"/> <!-- this contains the element that the filter is applied to -->
+        </feMerge>
+      </filter>
+  </svg>
   <header class="header">
       <img src="logo.svg" class="header__logo" alt="Logo">
       <div class="header__text">
