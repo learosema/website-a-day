@@ -1,0 +1,26 @@
+{
+  "name": "website-a-day",
+  "version": "1.0.0",
+  "description": "My take on the challenge",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "http-server -C0 ./"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/terabaud/website-a-day.git"
+  },
+  "keywords": [
+    "challenge"
+  ],
+  "author": "Lea Rosema",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/terabaud/website-a-day/issues"
+  },
+  "homepage": "https://github.com/terabaud/website-a-day#readme",
+  "devDependencies": {
+    "http-server": "^0.11.1"
+  }
+}
