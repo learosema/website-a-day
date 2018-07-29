@@ -11,6 +11,9 @@ Paused the challenge due to private reasons.
 * [Day 6: Book/Author](book-author/) (wip)
 * [Day 7: Movie/Trailer](movie-trailer/) (wip)
 * [Day 8: Celebrity Fan Page](tribute-page/) (wip)
+* [Day 9: Toy/Game](game/) (wip)
+* [Day 10: Photographer](photographer/)(wip)
+
 
 ## LICENSE
 
